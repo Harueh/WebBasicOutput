@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+}
+
+html,body{
+    height:100%
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.text-faded{
+    color: gray;
+    font-size: .65em;
+    letter-spacing: .45em;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.text-title{
+    font-size: 2em;
+    font-family: Fraunces;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.text-description{
+    color: gray;
+    font-size: .80em;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.text-currentprice{
+    font-size: 2em;
+    font-weight: bold;
+    color:green;
+    font-family: Fraunces;
+}
+
+.text-originalprice{
+    font-size: .85em;
+    color: gray;
+    text-decoration: line-through;
+    font-family: Fraunces;
+    padding-left: 20px;
+}
+.divTextBox{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px; 
+}
+
+.divPrice{
+    display: flex;
+    align-items: center;
+}
+
+.divPrice > div{
+    flex: 1;
+    width:50%;
+}
+
+.buybutton{
+    height:40px;
+    width:100%;
+    color:white;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.buybutton:hover{
+    cursor: pointer;
+}
+
+.buybutton:active
+{
+    background-color: darkgreen;
+}
+
+@media screen and (orientation:landscape) {
+    .divItemBox{
+        /* width:600px;
+        margin-left: 15%;
+        margin-right: 15%;
+        height:450px; */
+        background-color: white;
+        display: flex;
+
+        margin-left: 25%;
+        margin-right: 27%;
+        margin-top: 10%;
+        height: 30em;
+        width: 38em;
+        border-radius: 10px;
+        overflow: hidden;
+        position:absolute;
+    }
+    
+    /* .divItemBox > div
+    {
+        flex:1;
+        width:50%;
+    } */
+
+     /* Border for alignment checking
+        border-color: black;
+        border: 2px solid; */
+    
+    .divItemBox img{
+        height: 100%;
+    }
+}
+
+@media screen and (orientation:portrait) {
+   
+    .divItemBox{
+        background-color: white;
+        display: inline-block;
+        width: 18em;
+        height: 42em;
+        margin-left: 18%;
+        margin-right: 5%;
+        margin-top: 5%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 5%;
+    }
+
+    .divItemBox img{
+        width: 100%;
+    }
+}
+
+
+
